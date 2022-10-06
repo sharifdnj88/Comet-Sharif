@@ -28,6 +28,9 @@
 
   <body>
 
+    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=766613621054090&autoLogAppEvents=1" nonce="L4Qp2L6j"></script>
+
     <!-- Preloader-->
     <div id="loader">
         <div class="centrize">

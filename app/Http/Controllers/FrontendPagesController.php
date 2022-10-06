@@ -69,5 +69,16 @@ class FrontendPagesController extends Controller
             'posts'          => $posts
         ]);
     }
+
+     /**
+     * Single Blog page
+     */
+    public function ShowSingleBlogPage($slug)
+    {
+        $single_blog    = Post::where('slug', $slug) -> first();
+        return view('frontend.pages.single-blog',[
+            'post'          => $single_blog
+        ]);
+    }
     
 }

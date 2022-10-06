@@ -105,6 +105,7 @@ Route::get('/', [ FrontendPagesController::class, 'ShowFrontendHomePage' ] ) -> 
 Route::get('/about-page', [ FrontendPagesController::class, 'ShowFrontendAboutPage' ] ) -> name('about.page');
 Route::get('/contact-page', [ FrontendPagesController::class, 'ShowFrontendContactPage' ] ) -> name('contact.page');
 Route::get('/blog-page', [ FrontendPagesController::class, 'ShowFrontendBlogPage' ] ) -> name('blog.page');
+Route::get('/single-blog/{slug}', [ FrontendPagesController::class, 'ShowSingleBlogPage' ] ) -> name('single.blog');
 Route::get('/portfolio-single/{slug}', [ FrontendPagesController::class, 'ShowSinglePortfolioPage' ] ) -> name('portfolio.single.page');
 Route::get('/post_category/{slug}', [ FrontendPagesController::class, 'ShowBlogPostByCategory' ] ) -> name('blog.post.category');
 Route::get('/post_tag/{slug}', [ FrontendPagesController::class, 'ShowBlogPostByTag' ] ) -> name('blog.post.tag');
